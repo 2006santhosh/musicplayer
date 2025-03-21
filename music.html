@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="music.css">
+    <script defer src="music.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Music Player</title>
+    <script src="https://kit.fontawesome.com/cbd69084f9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+<div class="musicplayer">
+    <nav>
+        <div class="circle">
+            <i class="fa-solid fa-angle-left"></i>
+        </div>
+        <div class="circle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <img src="sab.jpg" class="song-img">
+    <h1>Espresso</h1>
+    <p>Sabrina Carpenter</p>
+    <audio id="song">
+        <source src="Sabrina_Carpenter_-_Espresso__Official_Video_(256k).mp3" type="audio/mpeg" >
+    </audio>
+    <input type="range" id="progress" value="0">
+<div class="controls">
+    <div><i class="fa-solid fa-backward"></i></div>
+    <div class="play" onclick="playpause()"><i class="fa-solid fa-play" id="ctrl"></i></div>
+    <div><i class="fa-solid fa-forward"></i></div>
+</div>
+</div>
+    </div>
+</body>
+</html>
